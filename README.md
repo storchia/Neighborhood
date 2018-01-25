@@ -6,7 +6,7 @@ Application will display markers with Soccer(Futbol) Clubs on the Buenos Aires, 
 Search option available as well for Clubs listed.
 
 # How to run
-To run this application download all of the files and open the index.html file. For this application to run properly you must be connected to the internet.
+To run this application download all of the files and open the `index.html` file. For this application to run properly you must be connected to the internet.
 
 # Reference material
 * [KnockoutJS Tutorials](http://knockoutjs.com/documentation/introduction.html)
