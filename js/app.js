@@ -108,11 +108,8 @@ function populateInfoWindow(marker, infowindow) {
         }
     });
 
-};
-
 function googleError() {
     alert('Wikipedia article not available at the moment.');
-};
 
 //Initalizes google map api and places starting location and markers.
 function initMap() {
@@ -137,6 +134,7 @@ function initMap() {
             id: i
         });
         markers.push(marker);
+
         marker.addListener('click', function() {
             var self = this;
             populateInfoWindow(this, largeInfowindow);
