@@ -7,3 +7,9 @@ Search option available as well for Clubs listed.
 
 # How to run
 To run this application download all of the files and open the index.html file. For this application to run properly you must be connected to the internet.
+
+# Reference material
+* [KnockoutJS Tutorials](http://knockoutjs.com/documentation/introduction.html)
+* [Google Maps Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/)
+* [Stack Overflow Forums](https://stackoverflow.com/)
+* [Udacity Forums](https://discussions.udacity.com/c/nd004-full-stack-broadcast)
