@@ -77,7 +77,7 @@ function AppViewModel() {
 
 }
 
-// This function populates the infowindow when the marker is clicked.
+// This function collects Wikipedia information for Infowindow.
 function populateInfoWindow(marker, infowindow) {
     var query = marker.title;
 
