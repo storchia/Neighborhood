@@ -106,12 +106,14 @@ function populateInfoWindow(marker, infowindow) {
             clearTimeout(wikiRequestTimeout);
             console.log(response);
         }
+    }).fail(function() {
+        alert('Something went wrong please reload page.');
     });
 
 }
 
 function googleError() {
-    alert('Wikipedia article not available at the moment.');
+    alert('Map not available at the moment.');
 }
 
 //Initalizes google map api and places starting location and markers.
