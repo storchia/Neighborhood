@@ -108,8 +108,11 @@ function populateInfoWindow(marker, infowindow) {
         }
     });
 
+}
+
 function googleError() {
     alert('Wikipedia article not available at the moment.');
+}
 
 //Initalizes google map api and places starting location and markers.
 function initMap() {
@@ -133,18 +136,22 @@ function initMap() {
             animation: google.maps.Animation.DROP,
             id: i
         });
-        markers.push(marker);
 
-        marker.addListener('click', function() {
+        markers.push(marker);
+        bounds.extend(markers[i].position);
+        marker.addListener('click', openInfoWindow);
+}
+// Funcion to Open Info Window
+    function openInfoWindow() {
             var self = this;
             populateInfoWindow(this, largeInfowindow);
             this.setAnimation(google.maps.Animation.BOUNCE);
             setTimeout(function() {
                 self.setAnimation(null);
             }, 1400);
-        });
-        bounds.extend(markers[i].position);
-    }
+        }
+
+
 
     map.fitBounds(bounds);
     viewModel = new AppViewModel();
