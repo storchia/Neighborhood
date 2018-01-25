@@ -1,3 +1,4 @@
+// Global Variables
 var map;
 var viewModel;
 var markers = [];
@@ -46,6 +47,7 @@ var locations = [{
     },
 ];
 
+// Viewmodel function
 function AppViewModel() {
     var self = this;
     self.marker = ko.observableArray(markers);
@@ -75,6 +77,7 @@ function AppViewModel() {
 
 }
 
+// This function populates the infowindow when the marker is clicked.
 function populateInfoWindow(marker, infowindow) {
     var query = marker.title;
 
